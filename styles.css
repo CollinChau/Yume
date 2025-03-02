@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html, body {
+    height: 100%; /* Adjusted to ensure the body takes up full height */
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kanit', cursive;
+    background-color: #f5faff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed to top-align content */
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ensures the body stretches to at least the full height of the page */
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%; /* Ensures header expands horizontally */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 15px; /* Reduced padding for all sections */
+}
+
+#welcome-section {
+    margin-bottom: 10px; /* Reduced margin for welcome section */
+}
+
+#featured-products {
+    margin-bottom: 10px; /* Reduced margin for featured products section */
+}
+
+#shop-by-collection {
+    margin-bottom: 10px; /* Reduced margin for shop by collection section */
+}
+
+footer {
+    background-color: #ffffff;
+    width: 100%; /* Ensures footer expands horizontally */
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure the grid wraps on smaller screens */
+}
+
+.collection {
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Set width for each collection */
+    transition: transform 0.3s ease;
+}
+
+.collection:hover {
+    transform: translateY(-5px); /* Add slight hover effect */
+}
+
+.collection img {
+    width: 100%; /* Make image fill the container */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.collection img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 1s ease;
+}
+
+/* Scale-up animation */
+.scale-up {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 1.5s ease, transform 1s ease;
+}
+
+/* When the element is in view */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scale-up when in view */
+.scale-up.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
