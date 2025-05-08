@@ -9,7 +9,7 @@ html, body {
 
 body {
     font-family: 'Kanit', cursive;
-    background-color: #f5faff;
+    background-color: #f5faff; /* Ensure the background stays intact */
     color: #333;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 100vh; 
+    opacity: 1; /* Ensure the page is visible initially */
 }
 
 header {
@@ -153,6 +154,7 @@ button:hover {
 .smooth-scroll {
     scroll-behavior: smooth;
 }
+
 .cart-icon {
     position: absolute;
     top: 33px;
@@ -198,4 +200,4 @@ button:hover {
     to {
       transform: translateY(0);
     }
-  }
+}

@@ -18,6 +18,12 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <a href="login.html" class="login-icon">
+            <img src="imgs/login-icon.png" alt="Login" />
+        </a>
+        <a href="cart.html" class="cart-icon">
+            <img src="imgs/cart-icon.png" alt="Cart" />
+        </a>
     </header>
     
     <section id="welcome-section" class="fade-in">
@@ -90,15 +96,13 @@
         <p>&copy; 2025 Yume. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for animations -->
     <script>
-        // Function to add the 'visible' class when elements come into view
         const animateOnScroll = () => {
             const elementsToAnimate = document.querySelectorAll('.fade-in, .scale-up');
 
             const options = {
-                root: null,  // viewport
-                threshold: 0.1,  // trigger when 10% of the element is in view
+                root: null,  
+                threshold: 0.1,  
             };
 
             const observer = new IntersectionObserver((entries, observer) => {
@@ -114,7 +118,6 @@
             });
         };
 
-        // Wait for the DOM to load before running the animation setup
         document.addEventListener('DOMContentLoaded', () => {
             animateOnScroll();
         });

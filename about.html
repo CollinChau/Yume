@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Yume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="smooth-scroll">
+  <header class="fade-in">
+    <h1>YUME</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="login.html" class="login-icon">
+      <img src="imgs/login-icon.png" alt="Login" />
+  </a>
+  <a href="cart.html" class="cart-icon">
+      <img src="imgs/cart-icon.png" alt="Cart" />
+  </a>
+  </header>
+  
+  <main>
+    <section id="about-section" class="fade-in">
+      <h2>About Yume</h2>
+      <p>Yume is dedicated to providing professional-quality stationery that blends timeless design with modern functionality.</p>
+      <p>Our products are directly sourced from Asia, ensuring exceptional quality at a surprisingly affordable price.</p>
+      <p>Inspired by a fusion of traditional craftsmanship and contemporary innovation, every item is a work of art designed to elevate your everyday writing experience.</p>
+      
+      <h3>Founded by Collin Chau</h3>
+      <p>Founded in New York by Collin Chau—a determined teen with a passion for fencing, computer science, photography, and even a bit of drawing—Yume began as a solo venture built on a simple idea: to make high-quality stationery accessible to everyone.</p>
+      <p>Collin’s unique blend of creativity and technical savvy has shaped Yume into a brand that marries art and functionality, ensuring that every product inspires creativity and self-expression.</p>
+      
+      <h3>Our Mission</h3>
+      <p>To inspire creativity and elevate everyday experiences through exceptional stationery that combines art, quality, and affordability—without compromising on style or functionality.</p>
+      
+      <h3>Our Story</h3>
+      <p>What started as Collin’s personal passion for design and a love for quality writing tools has grown into Yume—a trusted brand for students, professionals, and creatives alike.</p>
+      <p>By sourcing directly from Asia, we are able to offer top-tier products at prices that make professional-level quality attainable for everyone.</p>
+      <p>Driven by an entrepreneurial spirit and a commitment to innovation, Yume encourages you to express your individuality and pursue your dreams with every note you write.</p>
+    </section>
+  </main>
+  
+  <footer class="fade-in">
+    <p>&copy; 2025 Yume. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const fadeInElements = document.querySelectorAll('.fade-in');
+      fadeInElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = `opacity 1s ease-out ${index * 0.2}s, transform 1s ease-out ${index * 0.2}s`;
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, 100);
+      });
+    });
+  </script>
+
+</body>
+</html>
